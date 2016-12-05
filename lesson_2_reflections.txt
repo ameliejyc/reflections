@@ -1,0 +1,3 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+It creates a new git repository from an existing folder of files. From creating the .git file we can now run commands such as git status in command line to view the files within the repository and start to be able to track changes/commits.
