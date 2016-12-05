@@ -1,0 +1,26 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+- in gitbash I could see additions and reductions of specific changes
+- in commandline I could see the sections that had been modified directly compared although it didn't point out if something had been added/taken away in the way that gitbash showed
+- gitbash used diff method, commandline used FC method
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+- I would save time de-bugging by going to previous versions which had better working parts
+- I could get a sense of what my most common typos/errors are and work on them
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+- re-visiting changes will make much more sense as they will have annotations and be for specific changes, rather than having to search for a date or time when you think the change you want to re-visit might have been changed
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+- to build coding projects you're more likely to need a number of different file types whereas google docs cover more bases
+
+How can you use the commands git log and git diff to view the history of files?
+
+- run git log on your repository an then by reading the descriptions, choose two commit IDs to perform a git diff on to see the exact history
+
+How might using version control make you more confident to make changes that could break something?
+
+- because you're always backed up and can revisit commits to see where the break is using git checkout 
