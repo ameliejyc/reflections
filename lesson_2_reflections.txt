@@ -1,3 +1,19 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 It creates a new git repository from an existing folder of files. From creating the .git file we can now run commands such as git status in command line to view the files within the repository and start to be able to track changes/commits.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Offers a precursor before committing. Allows you to reduce many files to the few you think belong in the same commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Run git diff --staged to see what is in the staging area as a final measure before committing. Only add changes to the staging area using git add after running git diff on your changes to see which changes make sense to add to the staging area together.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+To keep test/experimental versions of your work which deviate from your master version.
+
+How do the diagrams help you visualize the branch structure?
+
+They help show the parents of each commit and at which point they deviate into branches. They also help show unreachable commits (i.e. commits made from a previous commit which may later be saved into a new branch.)
