@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+A remote repository makes your work available to others and allows you to publish your work after significant steps have been taken instead of after individual commits.
+
