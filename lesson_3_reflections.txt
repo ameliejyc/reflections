@@ -1,4 +1,35 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
-A remote repository makes your work available to others and allows you to publish your work after significant steps have been taken instead of after individual commits.
+A remote repository makes your work available to share with collaborators who may want to make contributions and changes too.
 
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+    
+To have control over when you want to integrate changes (it might not always be helpful to have them automatic because if you are working on a new feature the changes might cause conflicts).    
+    
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Fork: a copy of a repository on Github. Used when you want to make changes to a repository.
+Clone: a copy of a repository on a machine. Used mostly for collaborating. 
+Branch: a deviation from the master. Used to create side projects or to fix bugs which won't affect the master and might later be integrated.
+   
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+To work offline.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Collaborating without Git or Github would mean a lot more file sharing over individual emails or uploads to storage sites, which would work but be more time-consuming to track changes, especially if multiple collaborators are involved.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+You'd make changes in a separate branch so that the master is always working properly. Branches are used more for experimental code and it is good practice to push changes on the branch so that other people can review it before merging it into the master. This is a slower process but mitigates the risk and prevents a potential long time spent on bug-finding should something go wrong in the master.
+
+Commands:
+
+git remote  |    Show all remote locations for the repository
+git remote add origin url |     Add a new remote location for the repository. Origin is the default name to use when you create only one remote location. Url should be the https url to the github repository.
+git remove -v  |    Outputs the remote locations with verbose information (fetch and push urls)
+git push origin master  |    Push the master branch to the remote location origin.
+git pull origin master  |    Get the master branch from the remote location origin.
+git pull origin master  |    = Git fetch origin + git merge master origin/master
+git fetch origin  |    Get the changes from the remote location into the (hidden?) origin/master branch
